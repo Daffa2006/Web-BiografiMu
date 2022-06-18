@@ -1,0 +1,121 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
+}
+
+.headline {
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+   margin: 4rem;
+   line-height: 1;
+
+   
+}
+header.headline td.orange {
+    color: #FB8574;
+    font-size: 4em; 
+}
+header.headline td:not(.orange) {
+    color: #272233;
+    font-size: 2em;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    color: #272233;
+}
+section > div {
+    width: 350px;
+    height: 400px;
+    background-color: #FFFFFF;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.12);
+    text-align: center;
+    line-height: 0.5;
+}
+section > div > span {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+section > div > p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+img {
+    border-radius: 100%;
+    margin: 0 auto 2rem auto;
+    background-color: antiquewhite;
+}
+
+section > div > a:not(a.not-available) {
+
+background: linear-gradient(345deg, rgba(115,103,240,1) 0%, rgba(206,159,252,1) 86%);
+border-radius: 10px;
+text-decoration: none;
+color:#FAFAFA;
+font-weight: bold;
+font-size: 1.1em;
+height: 40px;
+width: 300px;
+line-height: 40px;
+margin: 1rem auto 0 auto;
+
+}
+section > div > a.not-available {
+
+background-color: rgb(111, 111, 111);
+border-radius: 10px;
+text-decoration: none;
+color:#FAFAFA;
+font-weight: bold;
+font-size: 1.1em;
+height: 40px;
+width: 300px;
+line-height: 40px;
+margin: 1rem auto 0 auto;
+cursor: no-drop;
+}
+section > div > a:hover:not(a.not-available) {
+background: linear-gradient(345deg, rgba(206,159,252,1) 0%, rgba(115,103,240,1) 86%);
+transition: 0.8s;
+}
+
+/* circle background */
+div.blue {
+    filter: blur(100px);
+    background-color: #E5F2FF;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+}
+
+div.orange {
+    filter: blur(100px);
+    background-color: #FEE3C7;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -10;
+    right: 0;
+    bottom: 10;
+}
+
+div.red {
+    filter: blur(100px);
+    background-color: #F4E2E2;
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    z-index: -10;
+    right: 0;
+    bottom: 0;
+}
